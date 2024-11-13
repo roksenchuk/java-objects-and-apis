@@ -10,7 +10,8 @@ public class TryCatch {
         try {
             file.createNewFile();
         } catch (IOException e) {
-            System.out.println("Sorry, there is an error.");
+            System.out.println("Sorry, there is an error." + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
