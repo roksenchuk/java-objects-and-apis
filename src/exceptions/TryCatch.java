@@ -9,7 +9,7 @@ public class TryCatch {
         File file = new File("resources/nonexistent.txt");
         try {
             file.createNewFile();
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("Sorry, there is an error." + e.getMessage());
             e.printStackTrace();
         }
