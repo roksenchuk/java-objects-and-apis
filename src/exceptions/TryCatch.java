@@ -16,6 +16,8 @@ public class TryCatch {
         } catch (Exception e) {
             System.out.println("Sorry, there is an error." + e.getMessage());
             e.printStackTrace();
+        } finally {
+            file.delete();
         }
     }
 }
